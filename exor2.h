@@ -13,7 +13,9 @@ SC_MODULE(exor2)          // declare nand2 sc_module
   nand2 n1, n2, n3, n4;
   sc_signal<bool> s1, s2, s3;
 
-  SC_CTOR(exor2)          // constructor for exor2
+  SC_CTOR(exor2) : n1("n1"), n2("n2"), n3("n3"), n4("n4"),           // constructor for exor2
+                   s1("s1"), s2("s2"), s3("s3"),
+                   A("A"), B("B"), F("F")
   {
     n1.A.bind(A);
     n1.B.bind(B);
