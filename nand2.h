@@ -9,7 +9,7 @@ SC_MODULE(nand2)          // declare nand2 sc_module
   void do_nand2()         // a C++ function
   {
 
-    F = A && B;// TODO: put your implementation here
+    F = !(A && B);// TODO: put your implementation here
 
   }
 
